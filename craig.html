@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <title>Craigslist</title>
+  <style>
+    h1{
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    	font-size: 45px;
+    	font-style: normal;
+    	font-variant: normal;
+    	font-weight: 300;
+    	text-align:Center;
+    	line-height: 26.4px;
+      color: #F67280;
+  }
+  h2{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+       text-align: center;
+  }
+  footer{
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+	.sideBar{
+	  float: right;
+	  width: 20%;
+    height: 100%;
+ 	  background-color: #D8BFD8;
+	}
+	.content{
+	  overflow: auto;
+	}
+	.headers{
+      background-color:  #D8BFD8;
+          width: 50%;
+          font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+
+	}
+	.normal{
+	  background-color: white;
+	  color: black;
+	}
+	body {
+    margin: 0;
+
+   }
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 25%;
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
+     background-color: ;
+     position: absolute;
+     height: 60%;
+     overflow: auto;
+   }
+
+   li a {
+    display: block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+   }
+li {
+  display: block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #2649CE;
+  padding: 8px 16px;
+  text-decoration: none;
+
+}
+   li a.active {
+    background-color: #4B0082;
+    color: white;
+   }
+
+   li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+   }
+  </style>
+<h1>Craigslist </h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<ul id = "navi">
+  <li><a class="active" href="#" >Home</a></li>
+  <li><a  href="https://www.google.co.in/">Find an appartment </a></li>
+  <li><a href="https://www.google.co.in/">See Restaurants nearby </a></li>
+  <li><a href="https://www.google.co.in/">Find a Job </a></li>
+  <li><a href="https://www.google.co.in/">For Sale</a></li>
+  <li><a href="https://www.google.co.in">Community</a></li>
+</ul>
+<aside class="sideBar">
+  <h2> Event Calendar</h2>
+  <ul>
+<iframe src="https://calendar.google.com/calendar/embed?src=dg731%40snu.edu.in&ctz=Asia/Calcutta" style="border: 0" width="220" height="200" frameborder="0" scrolling="no"></iframe>
+</ul>
+</aside>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+
+<section style="margin-left:25%; margin-right:50%;padding:5px 32px;height:1000px;font-family:"Trebuchet MS", Helvetica, sans-serif">
+<section class = "content">
+  <article>
+  <details>
+    <summary class = "headers">
+
+     <h2 style="color: #6A18BC"> Places in India <h2> <br>  </summary>
+
+  <p class="headers">
+<br>
+
+<li> india</li>
+<li>ahmedabad</li>
+<li>bangalore</li>
+<li>bhubaneswar</li>
+<li>chandigarh</li>
+<li>chennai</li>
+<li>delhi</li>
+<li>goa</li>
+<li>hyderabad</li>
+<li>indore</li>
+<li>jaipur</li>
+<li>kerala</li>
+<li>kolkata</li>
+<li>lucknow</li>
+<li>mumbai</li>
+<li>pune</li>
+
+
+  </details>
+</article>
+</section>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqs8naOgKhpc-8qA66rCgZNgX6X-VkmRs&callback=myMap"></script>
+<footer class = "content">
+  <address>
+  Property of Dipanshu Gurwara.
+</address>
+</footer>
+
+</body>
+</html>
